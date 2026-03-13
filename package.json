@@ -1,14 +1,19 @@
 {
   "name": "playwright-qa-assignment",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "description": "Playwright automation suite for the Restful-Booker platform",
+  "type": "module",
+  "scripts": {
+    "test":      "playwright test",
+    "test:api":  "playwright test --project=api",
+    "test:ui":   "playwright test --project=ui",
+    "report":    "playwright show-report"
+  },
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.5.0"
+    "@playwright/test": "^1.44.0",
+    "dotenv":           "^16.4.5"
+  },
+  "optionalDependencies": {
+    "axe-playwright": "^2.0.2"
   }
 }
