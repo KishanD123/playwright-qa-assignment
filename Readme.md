@@ -106,6 +106,8 @@ It runs API tests first, then UI tests, and uploads the HTML report as a workflo
 
 **GitHub Pages Report:** Published automatically on every push to `main`. URL is shown in the `publish-report` job output and set as the environment URL.
 
+## Report Link: ** https://kishand123.github.io/playwright-qa-assignment/
+
 ---
 
 ## Test Coverage Summary
