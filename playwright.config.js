@@ -38,7 +38,7 @@ export default defineConfig({
       use: {
         ...devices['Desktop Chrome'],
         baseURL: process.env.BASE_URL || 'https://automationintesting.online',
-        headless: false,
+        headless: true,
       },
     },
   ],
