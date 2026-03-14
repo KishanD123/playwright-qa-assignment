@@ -26,7 +26,7 @@ export default defineConfig({
       name: 'api',
       testDir: './tests/api',
       use: {
-        baseURL: process.env.BASE_API_URL || 'https://automationintesting.online',
+        baseURL: process.env.BASE_API_URL || 'https://restful-booker.herokuapp.com',
         extraHTTPHeaders: { 'Content-Type': 'application/json' },
       },
     },
