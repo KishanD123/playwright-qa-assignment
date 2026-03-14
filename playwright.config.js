@@ -6,7 +6,7 @@ dotenv.config();
 export default defineConfig({
   timeout: 30_000,
   expect: { timeout: 10_000 },
-  fullyParallel: false,
+  fullyParallel: true,
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 2 : 1,
   reporter: [

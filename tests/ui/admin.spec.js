@@ -44,7 +44,7 @@ test.describe('Admin Panel', () => {
     });
   });
 
-  // ── Room Management ───────────────────────────────────────────────────────
+  // ── Room Management ────────────────────────────────────────────────────
   test('create new room → room appears in room list', async ({ page }) => {
     await loginPage.loginAsAdmin();
     await roomsPage.waitForDashboard();
@@ -108,7 +108,7 @@ test.describe('Admin Panel', () => {
     });
   });
 
-  test('logout → navigating to /admin redirects back to login', async ({ page }) => {
+  test.only('logout → navigating to /admin redirects back to login', async ({ page }) => {
     await loginPage.loginAsAdmin();
     await roomsPage.waitForDashboard();
 

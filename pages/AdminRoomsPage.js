@@ -70,7 +70,7 @@ export class AdminRoomsPage {
 
   async logout() {
     await this.logoutBtn.click();
-    await this.page.waitForURL(/.*\/admin/, { timeout: 5_000 });
+    await this.page.waitForLoadState('networkidle',{ timeout: 5_000 });
   }
 
   async goToReport() {
