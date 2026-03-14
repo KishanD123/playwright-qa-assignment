@@ -108,7 +108,7 @@ test.describe('Admin Panel', () => {
     });
   });
 
-  test.only('logout → navigating to /admin redirects back to login', async ({ page }) => {
+  test('logout → navigating to /admin redirects back to login', async ({ page }) => {
     await loginPage.loginAsAdmin();
     await roomsPage.waitForDashboard();
 
